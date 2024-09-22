@@ -1,0 +1,91 @@
+raw`
+Starter_Shack_MapScripts::
+	.byte 0
+`
+
+script Starter_Shack_ForcePokePickup{
+    lockall
+    msgbox("Go pick up a Pokemon.")
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_StarterPickup)
+    waitmovement(0)
+    releaseall
+}
+
+script Starter_Shack_SetIntroState{
+    // Set all flags for the intro state 
+    // KURT: Modify this later to test different game states
+    setvar(VAR_BIRCH_LAB_STATE, 3)
+    setvar(VAR_LITTLEROOT_INTRO_STATE, 7)
+    setvar(VAR_LITTLEROOT_TOWN_STATE, 3)
+    setvar(VAR_LITTLEROOT_HOUSES_STATE_MAY, 2)
+    
+
+}
+
+script Starter_Shack_Pokeball_1_Pickup{
+    // Force Player to pick up at least 1 pokeball
+    lockall
+    showmonpic(SPECIES_PHANTUMP, 10, 3)
+    msgbox("Would you like to select PHANTUMP?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_PHANTUMP, 99, ITEM_MASTER_BALL)
+        setflag(FLAG_SYS_POKEMON_GET)
+        if(var(VAR_LITTLEROOT_INTRO_STATE) == 0){
+                setvar(VAR_LITTLEROOT_INTRO_STATE, 1)
+            }
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Picked up PHANTUMP")
+            removeobject(1)
+            setflag(FLAG_STARTER_BALL_1)
+            call(NickNamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received PHANTUMP")
+            removeobject(1)
+            setflag(FLAG_STARTER_BALL_1)
+            call(NickNameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No more room")
+            }
+    }
+    else{
+        hidemonpic
+        msgbox(Text_Pokemon_Not_Chosen)
+    }
+    releaseall
+}
+
+script NickNamePartyMon{
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+}
+
+script NickNameBoxMon{
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+}
+
+text Text_Pokemon_Not_Chosen{
+    "Did not choose Pokemon"
+}
+
+movement Movement_StarterPickup{
+    walk_up
+}
+
+
+
+

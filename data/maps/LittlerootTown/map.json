@@ -146,6 +146,13 @@
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_STARTER_SHACK",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -234,8 +241,8 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 15,
-      "y": 13,
+      "x": 12,
+      "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LittlerootTown_EventScript_TownSign"
