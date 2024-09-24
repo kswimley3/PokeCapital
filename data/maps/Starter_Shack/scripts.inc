@@ -42,6 +42,8 @@ Starter_Shack_SetIntroState::
 	setflag FLAG_HIDE_ROUTE_101_ZIGZAGOON
 # 27 "data/maps/Starter_Shack/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_101_BIRCH
+# 28 "data/maps/Starter_Shack/scripts.pory"
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN
 	return
 
 

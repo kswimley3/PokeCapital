@@ -5,6 +5,7 @@ LittlerootTown_ApartmentSmall1_2F_MapScripts::
 
 script LittlerootTown_Apartmentsmall1_2F_EventScript_Nurse{
     lockall
+    face_player
     msgbox(Text_Nurse, MSGBOX_AUTOCLOSE)
     waitmessage
 	releaseall
@@ -13,8 +14,10 @@ script LittlerootTown_Apartmentsmall1_2F_EventScript_Nurse{
 
 script LittlerootTown_Apartmentsmall1_2F_EventScript_LittleGirl{
     lockall
+    face_player
     msgbox(Text_LittleGirl, MSGBOX_AUTOCLOSE)
     waitmessage
+    face_original_direction
 	releaseall
 	end
 }

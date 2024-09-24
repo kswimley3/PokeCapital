@@ -1080,3 +1080,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LittlerootTown_ApartmentSmall1/scripts.inc"
 
 	.include "data/maps/LittlerootTown_ApartmentSmall1_2F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_ApartmentSmall2/scripts.inc"
+
+	.include "data/maps/LittlerootTown_ApartmentSmall2_2F/scripts.inc"

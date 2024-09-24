@@ -73,6 +73,8 @@
 #define MAP_STARTER_SHACK                        (5 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_APARTMENT_SMALL1     (6 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_APARTMENT_SMALL1_2F  (7 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_APARTMENT_SMALL2     (8 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_APARTMENT_SMALL2_2F  (9 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))

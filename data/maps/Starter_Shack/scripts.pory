@@ -25,7 +25,7 @@ script Starter_Shack_SetIntroState{
     setflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
     setflag(FLAG_HIDE_ROUTE_101_ZIGZAGOON)
     setflag(FLAG_HIDE_ROUTE_101_BIRCH)
-
+    clearflag(FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN)
 }
 
 script Starter_Shack_Pokeball_1_Pickup{

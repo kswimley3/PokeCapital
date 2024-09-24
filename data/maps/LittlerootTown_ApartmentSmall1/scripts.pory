@@ -5,6 +5,7 @@ LittlerootTown_ApartmentSmall1_MapScripts::
 
 script LittlerootTown_Apartmentsmall1_EventScript_GayMan1{
     lockall
+    face_player
     msgbox(Text_GayMan1, MSGBOX_AUTOCLOSE)
     waitmessage
 	releaseall
@@ -13,6 +14,7 @@ script LittlerootTown_Apartmentsmall1_EventScript_GayMan1{
 
 script LittlerootTown_Apartmentsmall1_EventScript_GayMan2{
     lockall
+    face_player
     msgbox(Text_GayMan2, MSGBOX_AUTOCLOSE)
     waitmessage
 	releaseall
