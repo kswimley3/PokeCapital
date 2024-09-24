@@ -30,121 +30,133 @@ Starter_Shack_SetIntroState::
 	setvar VAR_LITTLEROOT_TOWN_STATE, 3
 # 21 "data/maps/Starter_Shack/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 2
+# 22 "data/maps/Starter_Shack/scripts.pory"
+	setflag FLAG_RESCUED_BIRCH
+# 23 "data/maps/Starter_Shack/scripts.pory"
+	setvar VAR_ROUTE101_STATE, 3
+# 24 "data/maps/Starter_Shack/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
+# 25 "data/maps/Starter_Shack/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
+# 26 "data/maps/Starter_Shack/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_101_ZIGZAGOON
+# 27 "data/maps/Starter_Shack/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_101_BIRCH
 	return
 
 
 Starter_Shack_Pokeball_1_Pickup::
-# 28 "data/maps/Starter_Shack/scripts.pory"
+# 33 "data/maps/Starter_Shack/scripts.pory"
 	lockall
-# 29 "data/maps/Starter_Shack/scripts.pory"
-	showmonpic SPECIES_PHANTUMP, 10, 3
-# 30 "data/maps/Starter_Shack/scripts.pory"
+# 34 "data/maps/Starter_Shack/scripts.pory"
+	showmonpic SPECIES_MAGBY, 10, 3
+# 35 "data/maps/Starter_Shack/scripts.pory"
 	msgbox Starter_Shack_Pokeball_1_Pickup_Text_0, MSGBOX_YESNO
-# 31 "data/maps/Starter_Shack/scripts.pory"
+# 36 "data/maps/Starter_Shack/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Starter_Shack_Pokeball_1_Pickup_2
-# 57 "data/maps/Starter_Shack/scripts.pory"
+# 62 "data/maps/Starter_Shack/scripts.pory"
 	hidemonpic
-# 58 "data/maps/Starter_Shack/scripts.pory"
+# 63 "data/maps/Starter_Shack/scripts.pory"
 	msgbox Text_Pokemon_Not_Chosen
 Starter_Shack_Pokeball_1_Pickup_1:
-# 60 "data/maps/Starter_Shack/scripts.pory"
+# 65 "data/maps/Starter_Shack/scripts.pory"
 	releaseall
 	return
 
 Starter_Shack_Pokeball_1_Pickup_2:
-# 32 "data/maps/Starter_Shack/scripts.pory"
-	givemon SPECIES_PHANTUMP, 99, ITEM_MASTER_BALL
-# 33 "data/maps/Starter_Shack/scripts.pory"
+# 37 "data/maps/Starter_Shack/scripts.pory"
+	givemon SPECIES_MAGBY, 10, ITEM_MASTER_BALL
+# 38 "data/maps/Starter_Shack/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
-# 34 "data/maps/Starter_Shack/scripts.pory"
+# 39 "data/maps/Starter_Shack/scripts.pory"
 	compare VAR_LITTLEROOT_INTRO_STATE, 0
 	goto_if_eq Starter_Shack_Pokeball_1_Pickup_6
 Starter_Shack_Pokeball_1_Pickup_5:
-# 37 "data/maps/Starter_Shack/scripts.pory"
+# 42 "data/maps/Starter_Shack/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Starter_Shack_Pokeball_1_Pickup_8
-# 44 "data/maps/Starter_Shack/scripts.pory"
+# 49 "data/maps/Starter_Shack/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Starter_Shack_Pokeball_1_Pickup_9
-# 52 "data/maps/Starter_Shack/scripts.pory"
+# 57 "data/maps/Starter_Shack/scripts.pory"
 	hidemonpic
-# 53 "data/maps/Starter_Shack/scripts.pory"
+# 58 "data/maps/Starter_Shack/scripts.pory"
 	msgbox Starter_Shack_Pokeball_1_Pickup_Text_3
 	goto Starter_Shack_Pokeball_1_Pickup_1
 
 Starter_Shack_Pokeball_1_Pickup_6:
-# 35 "data/maps/Starter_Shack/scripts.pory"
+# 40 "data/maps/Starter_Shack/scripts.pory"
 	setvar VAR_LITTLEROOT_INTRO_STATE, 1
 	goto Starter_Shack_Pokeball_1_Pickup_5
 
 Starter_Shack_Pokeball_1_Pickup_8:
-# 38 "data/maps/Starter_Shack/scripts.pory"
+# 43 "data/maps/Starter_Shack/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 39 "data/maps/Starter_Shack/scripts.pory"
+# 44 "data/maps/Starter_Shack/scripts.pory"
 	msgbox Starter_Shack_Pokeball_1_Pickup_Text_1
-# 40 "data/maps/Starter_Shack/scripts.pory"
+# 45 "data/maps/Starter_Shack/scripts.pory"
 	removeobject 1
-# 41 "data/maps/Starter_Shack/scripts.pory"
+# 46 "data/maps/Starter_Shack/scripts.pory"
 	setflag FLAG_STARTER_BALL_1
-# 42 "data/maps/Starter_Shack/scripts.pory"
+# 47 "data/maps/Starter_Shack/scripts.pory"
 	call NickNamePartyMon
 	goto Starter_Shack_Pokeball_1_Pickup_1
 
 Starter_Shack_Pokeball_1_Pickup_9:
-# 45 "data/maps/Starter_Shack/scripts.pory"
+# 50 "data/maps/Starter_Shack/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 46 "data/maps/Starter_Shack/scripts.pory"
+# 51 "data/maps/Starter_Shack/scripts.pory"
 	msgbox Starter_Shack_Pokeball_1_Pickup_Text_2
-# 47 "data/maps/Starter_Shack/scripts.pory"
+# 52 "data/maps/Starter_Shack/scripts.pory"
 	removeobject 1
-# 48 "data/maps/Starter_Shack/scripts.pory"
+# 53 "data/maps/Starter_Shack/scripts.pory"
 	setflag FLAG_STARTER_BALL_1
-# 49 "data/maps/Starter_Shack/scripts.pory"
+# 54 "data/maps/Starter_Shack/scripts.pory"
 	call NickNameBoxMon
 	goto Starter_Shack_Pokeball_1_Pickup_1
 
 
 NickNamePartyMon::
-# 64 "data/maps/Starter_Shack/scripts.pory"
+# 69 "data/maps/Starter_Shack/scripts.pory"
 	msgbox NickNamePartyMon_Text_0, MSGBOX_YESNO
-# 65 "data/maps/Starter_Shack/scripts.pory"
+# 70 "data/maps/Starter_Shack/scripts.pory"
 	hidemonpic
-# 66 "data/maps/Starter_Shack/scripts.pory"
+# 71 "data/maps/Starter_Shack/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NickNamePartyMon_1
 	return
 
 NickNamePartyMon_1:
-# 67 "data/maps/Starter_Shack/scripts.pory"
+# 72 "data/maps/Starter_Shack/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 68 "data/maps/Starter_Shack/scripts.pory"
+# 73 "data/maps/Starter_Shack/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	return
 
 
 NickNameBoxMon::
-# 73 "data/maps/Starter_Shack/scripts.pory"
+# 78 "data/maps/Starter_Shack/scripts.pory"
 	msgbox NickNamePartyMon_Text_0, MSGBOX_YESNO
-# 74 "data/maps/Starter_Shack/scripts.pory"
+# 79 "data/maps/Starter_Shack/scripts.pory"
 	hidemonpic
-# 75 "data/maps/Starter_Shack/scripts.pory"
+# 80 "data/maps/Starter_Shack/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NickNameBoxMon_2
 NickNameBoxMon_1:
-# 78 "data/maps/Starter_Shack/scripts.pory"
+# 83 "data/maps/Starter_Shack/scripts.pory"
 	call Common_EventScript_TransferredToPC
 	return
 
 NickNameBoxMon_2:
-# 76 "data/maps/Starter_Shack/scripts.pory"
+# 81 "data/maps/Starter_Shack/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NickNameBoxMon_1
 
 
-# 85 "data/maps/Starter_Shack/scripts.pory"
+# 90 "data/maps/Starter_Shack/scripts.pory"
 Movement_StarterPickup:
-# 86 "data/maps/Starter_Shack/scripts.pory"
+# 91 "data/maps/Starter_Shack/scripts.pory"
 	walk_up
 	step_end
 
@@ -153,25 +165,25 @@ Starter_Shack_ForcePokePickup_Text_0:
 	.string "Go pick up a Pokemon.$"
 
 Starter_Shack_Pokeball_1_Pickup_Text_0:
-# 30 "data/maps/Starter_Shack/scripts.pory"
-	.string "Would you like to select PHANTUMP?$"
+# 35 "data/maps/Starter_Shack/scripts.pory"
+	.string "Would you like to select MAGBY?$"
 
 Starter_Shack_Pokeball_1_Pickup_Text_1:
-# 39 "data/maps/Starter_Shack/scripts.pory"
-	.string "Picked up PHANTUMP$"
+# 44 "data/maps/Starter_Shack/scripts.pory"
+	.string "Picked up MAGBY$"
 
 Starter_Shack_Pokeball_1_Pickup_Text_2:
-# 46 "data/maps/Starter_Shack/scripts.pory"
-	.string "Received PHANTUMP$"
+# 51 "data/maps/Starter_Shack/scripts.pory"
+	.string "Received MAGBY$"
 
 Starter_Shack_Pokeball_1_Pickup_Text_3:
-# 53 "data/maps/Starter_Shack/scripts.pory"
+# 58 "data/maps/Starter_Shack/scripts.pory"
 	.string "No more room$"
 
 NickNamePartyMon_Text_0:
-# 64 "data/maps/Starter_Shack/scripts.pory"
+# 69 "data/maps/Starter_Shack/scripts.pory"
 	.string "Give it a nickname?$"
 
 Text_Pokemon_Not_Chosen::
-# 81 "data/maps/Starter_Shack/scripts.pory"
+# 86 "data/maps/Starter_Shack/scripts.pory"
 	.string "Did not choose Pokemon$"

@@ -1,0 +1,53 @@
+raw `
+LittlerootTown_ApartmentSmall1_2F_MapScripts::
+	.byte 0
+    `
+
+script LittlerootTown_Apartmentsmall1_2F_EventScript_Nurse{
+    lockall
+    msgbox(Text_Nurse, MSGBOX_AUTOCLOSE)
+    waitmessage
+	releaseall
+	end
+}
+
+script LittlerootTown_Apartmentsmall1_2F_EventScript_LittleGirl{
+    lockall
+    msgbox(Text_LittleGirl, MSGBOX_AUTOCLOSE)
+    waitmessage
+	releaseall
+	end
+}
+
+text Text_Nurse{
+    format("Gosh, times have been tough here ever since they closed down the Pokemon Center. I'm pretty worried about making rent this month.")
+}
+
+text Text_LittleGirl{
+    format("There's not much that I enjoy around this town. The kids are mean, the streets stink, and not many POKEMON roam around here. But at least I can look at my plant when I come home. Yay!")
+}
+
+
+script LittlerootTown_Apartmentsmall1_2F_EventScript_Plant{
+    lockall
+    msgbox(Text_Plant, MSGBOX_AUTOCLOSE)
+    waitmessage
+	releaseall
+	end
+}
+
+text Text_Plant{
+    format("It looks like it's dying.")
+}
+
+script LittlerootTown_Apartmentsmall1_2F_EventScript_Poster{
+    lockall
+    msgbox(Text_Poster, MSGBOX_AUTOCLOSE)
+    waitmessage
+	releaseall
+	end
+}
+
+text Text_Poster{
+    format("It's a poster for a local band: THE PUSHERS. They look like they suck." )
+}

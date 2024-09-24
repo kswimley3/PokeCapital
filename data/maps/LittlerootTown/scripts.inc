@@ -239,7 +239,7 @@ LittlerootTown_EventScript_StepOffTruckMale::
 # 120 "data/maps/LittlerootTown/scripts.pory"
 	call LittlerootTown_EventScript_GoInsideWithMom
 # 121 "data/maps/LittlerootTown/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+	@ setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK 
 # 122 "data/maps/LittlerootTown/scripts.pory"
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
 # 123 "data/maps/LittlerootTown/scripts.pory"
@@ -261,7 +261,7 @@ LittlerootTown_EventScript_StepOffTruckFemale::
 # 131 "data/maps/LittlerootTown/scripts.pory"
 	call LittlerootTown_EventScript_GoInsideWithMom
 # 132 "data/maps/LittlerootTown/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
+	@ setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
 # 133 "data/maps/LittlerootTown/scripts.pory"
 	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 8
 # 134 "data/maps/LittlerootTown/scripts.pory"
@@ -1855,188 +1855,196 @@ LittlerootTown_Text_WaitPlayer:
 # 928 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_WearTheseRunningShoes:
 # 929 "data/maps/LittlerootTown/scripts.pory"
-	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
+	.string "MOM: {PLAYER}! {PLAYER}! What\n"
 # 930 "data/maps/LittlerootTown/scripts.pory"
-	.string "introduce yourself to PROF. BIRCH?\p"
+	.string "the fuck?\p"
 # 931 "data/maps/LittlerootTown/scripts.pory"
-	.string "Oh! What an adorable POKéMON!\n"
+	.string "Why are you walking around without\n"
 # 932 "data/maps/LittlerootTown/scripts.pory"
-	.string "You got it from PROF. BIRCH. How nice!\p"
+	.string "shoes on?? Jesus, here.$"
 # 933 "data/maps/LittlerootTown/scripts.pory"
-	.string "You're your father's child, all right.\n"
+
 # 934 "data/maps/LittlerootTown/scripts.pory"
-	.string "You look good together with POKéMON!\p"
-# 935 "data/maps/LittlerootTown/scripts.pory"
-	.string "Here, honey! If you're going out on an\n"
-# 936 "data/maps/LittlerootTown/scripts.pory"
-	.string "adventure, wear these RUNNING SHOES.\p"
-# 937 "data/maps/LittlerootTown/scripts.pory"
-	.string "They'll put a zip in your step!$"
-# 938 "data/maps/LittlerootTown/scripts.pory"
-
-# 939 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
-# 940 "data/maps/LittlerootTown/scripts.pory"
-	.string "{PLAYER} switched shoes with the\n"
-# 941 "data/maps/LittlerootTown/scripts.pory"
-	.string "RUNNING SHOES.$"
-# 942 "data/maps/LittlerootTown/scripts.pory"
+# 935 "data/maps/LittlerootTown/scripts.pory"
+	.string "{PLAYER} put on some\n"
+# 936 "data/maps/LittlerootTown/scripts.pory"
+	.string "SHOES.$"
+# 937 "data/maps/LittlerootTown/scripts.pory"
 
-# 943 "data/maps/LittlerootTown/scripts.pory"
+# 938 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_ExplainRunningShoes:
+# 939 "data/maps/LittlerootTown/scripts.pory"
+	.string "MOM: {PLAYER}, Goddamn...\n"
+# 940 "data/maps/LittlerootTown/scripts.pory"
+	.string "Get out of here already.”$"
+# 941 "data/maps/LittlerootTown/scripts.pory"
+
+# 942 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Text_ComeHomeIfAnythingHappens:
+# 943 "data/maps/LittlerootTown/scripts.pory"
+	.string "And if anyone tells you they look\n"
 # 944 "data/maps/LittlerootTown/scripts.pory"
-	.string "MOM: {PLAYER}, those shoes came with\n"
+	.string "cheap, puch their damn face in!$"
 # 945 "data/maps/LittlerootTown/scripts.pory"
-	.string "instructions.\p"
+
 # 946 "data/maps/LittlerootTown/scripts.pory"
-	.string "“Press the B Button while wearing these\n"
+LittlerootTown_Text_CanUsePCToStoreItems:
 # 947 "data/maps/LittlerootTown/scripts.pory"
-	.string "RUNNING SHOES to run extra-fast!\p"
+	.string "You have a pokemon? I'm jealous.\n"
 # 948 "data/maps/LittlerootTown/scripts.pory"
-	.string "“Slip on these RUNNING SHOES and race\n"
+	.string "I didn't think anyone but the elites\p"
 # 949 "data/maps/LittlerootTown/scripts.pory"
-	.string "in the great outdoors!”$"
+	.string "could afford POKEBALLS anymore.$"
 # 950 "data/maps/LittlerootTown/scripts.pory"
 
 # 951 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_ComeHomeIfAnythingHappens:
-# 952 "data/maps/LittlerootTown/scripts.pory"
-	.string "… … … … … … … …\n"
-# 953 "data/maps/LittlerootTown/scripts.pory"
-	.string "… … … … … … … …\p"
-# 954 "data/maps/LittlerootTown/scripts.pory"
-	.string "To think that you have your very own\n"
-# 955 "data/maps/LittlerootTown/scripts.pory"
-	.string "POKéMON now…\l"
-# 956 "data/maps/LittlerootTown/scripts.pory"
-	.string "Your father will be overjoyed.\p"
-# 957 "data/maps/LittlerootTown/scripts.pory"
-	.string "…But please be careful.\n"
-# 958 "data/maps/LittlerootTown/scripts.pory"
-	.string "If anything happens, you can come home.\p"
-# 959 "data/maps/LittlerootTown/scripts.pory"
-	.string "Go on, go get them, honey!$"
-# 960 "data/maps/LittlerootTown/scripts.pory"
-
-# 961 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_CanUsePCToStoreItems:
-# 962 "data/maps/LittlerootTown/scripts.pory"
-	.string "If you use a PC, you can store items\n"
-# 963 "data/maps/LittlerootTown/scripts.pory"
-	.string "and POKéMON.\p"
-# 964 "data/maps/LittlerootTown/scripts.pory"
-	.string "The power of science is staggering!$"
-# 965 "data/maps/LittlerootTown/scripts.pory"
-
-# 966 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_BirchSpendsDaysInLab:
-# 967 "data/maps/LittlerootTown/scripts.pory"
+# 952 "data/maps/LittlerootTown/scripts.pory"
 	.string "PROF. BIRCH spends days in his LAB\n"
-# 968 "data/maps/LittlerootTown/scripts.pory"
-	.string "studying, then he'll suddenly go out in\l"
-# 969 "data/maps/LittlerootTown/scripts.pory"
-	.string "the wild to do more research…\p"
-# 970 "data/maps/LittlerootTown/scripts.pory"
-	.string "When does PROF. BIRCH spend time\n"
-# 971 "data/maps/LittlerootTown/scripts.pory"
-	.string "at home?$"
-# 972 "data/maps/LittlerootTown/scripts.pory"
+# 953 "data/maps/LittlerootTown/scripts.pory"
+	.string "ignoring the plight of our city,\l"
+# 954 "data/maps/LittlerootTown/scripts.pory"
+	.string "He claims to do research…\p"
+# 955 "data/maps/LittlerootTown/scripts.pory"
+	.string "When will PROF. BIRCH finally\n"
+# 956 "data/maps/LittlerootTown/scripts.pory"
+	.string "work for the people?$"
+# 957 "data/maps/LittlerootTown/scripts.pory"
 
-# 973 "data/maps/LittlerootTown/scripts.pory"
+# 958 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
-# 974 "data/maps/LittlerootTown/scripts.pory"
+# 959 "data/maps/LittlerootTown/scripts.pory"
 	.string "Um, um, um!\p"
-# 975 "data/maps/LittlerootTown/scripts.pory"
+# 960 "data/maps/LittlerootTown/scripts.pory"
 	.string "If you go outside and go in the grass,\n"
-# 976 "data/maps/LittlerootTown/scripts.pory"
+# 961 "data/maps/LittlerootTown/scripts.pory"
 	.string "wild POKéMON will jump out!$"
-# 977 "data/maps/LittlerootTown/scripts.pory"
+# 962 "data/maps/LittlerootTown/scripts.pory"
 
-# 978 "data/maps/LittlerootTown/scripts.pory"
+# 963 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-# 979 "data/maps/LittlerootTown/scripts.pory"
+# 964 "data/maps/LittlerootTown/scripts.pory"
 	.string "It's dangerous if you don't have\n"
-# 980 "data/maps/LittlerootTown/scripts.pory"
+# 965 "data/maps/LittlerootTown/scripts.pory"
 	.string "your own POKéMON.$"
+# 966 "data/maps/LittlerootTown/scripts.pory"
+
+# 967 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Text_CanYouGoSeeWhatsHappening:
+# 968 "data/maps/LittlerootTown/scripts.pory"
+	.string "Um, hi!\p"
+# 969 "data/maps/LittlerootTown/scripts.pory"
+	.string "There are scary POKéMON outside!\n"
+# 970 "data/maps/LittlerootTown/scripts.pory"
+	.string "I can hear their cries!\p"
+# 971 "data/maps/LittlerootTown/scripts.pory"
+	.string "I want to go see what's going on,\n"
+# 972 "data/maps/LittlerootTown/scripts.pory"
+	.string "but I don't have any POKéMON…\p"
+# 973 "data/maps/LittlerootTown/scripts.pory"
+	.string "Can you go see what's happening\n"
+# 974 "data/maps/LittlerootTown/scripts.pory"
+	.string "for me?$"
+# 975 "data/maps/LittlerootTown/scripts.pory"
+
+# 976 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Text_YouSavedBirch:
+# 977 "data/maps/LittlerootTown/scripts.pory"
+	.string "I confess I have yet to learn\n"
+# 978 "data/maps/LittlerootTown/scripts.pory"
+	.string "that a lesson of the purest good\p"
+# 979 "data/maps/LittlerootTown/scripts.pory"
+	.string "may not be drawn from the \n"
+# 980 "data/maps/LittlerootTown/scripts.pory"
+	.string "vilest evil.$"
 # 981 "data/maps/LittlerootTown/scripts.pory"
 
 # 982 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_CanYouGoSeeWhatsHappening:
-# 983 "data/maps/LittlerootTown/scripts.pory"
-	.string "Um, hi!\p"
-# 984 "data/maps/LittlerootTown/scripts.pory"
-	.string "There are scary POKéMON outside!\n"
-# 985 "data/maps/LittlerootTown/scripts.pory"
-	.string "I can hear their cries!\p"
-# 986 "data/maps/LittlerootTown/scripts.pory"
-	.string "I want to go see what's going on,\n"
-# 987 "data/maps/LittlerootTown/scripts.pory"
-	.string "but I don't have any POKéMON…\p"
-# 988 "data/maps/LittlerootTown/scripts.pory"
-	.string "Can you go see what's happening\n"
-# 989 "data/maps/LittlerootTown/scripts.pory"
-	.string "for me?$"
-# 990 "data/maps/LittlerootTown/scripts.pory"
-
-# 991 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_YouSavedBirch:
-# 992 "data/maps/LittlerootTown/scripts.pory"
-	.string "You saved PROF. BIRCH!\n"
-# 993 "data/maps/LittlerootTown/scripts.pory"
-	.string "I'm so glad!$"
-# 994 "data/maps/LittlerootTown/scripts.pory"
-
-# 995 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_GoodLuckCatchingPokemon:
-# 996 "data/maps/LittlerootTown/scripts.pory"
+# 983 "data/maps/LittlerootTown/scripts.pory"
 	.string "Are you going to catch POKéMON?\n"
-# 997 "data/maps/LittlerootTown/scripts.pory"
+# 984 "data/maps/LittlerootTown/scripts.pory"
 	.string "Good luck!$"
+# 985 "data/maps/LittlerootTown/scripts.pory"
+
+# 986 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Text_TownSign:
+# 987 "data/maps/LittlerootTown/scripts.pory"
+	.string "CORPORATE TOWN\n"
+# 988 "data/maps/LittlerootTown/scripts.pory"
+	.string "“An absolute shithole.”$"
+# 989 "data/maps/LittlerootTown/scripts.pory"
+
+# 990 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Text_ProfBirchsLab:
+# 991 "data/maps/LittlerootTown/scripts.pory"
+	.string "PROF. BIRCH'S POKéMON LAB$"
+# 992 "data/maps/LittlerootTown/scripts.pory"
+
+# 993 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Text_PlayersHouse:
+# 994 "data/maps/LittlerootTown/scripts.pory"
+	.string "{PLAYER}'s HOUSE$"
+# 995 "data/maps/LittlerootTown/scripts.pory"
+
+# 996 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Text_ProfBirchsHouse:
+# 997 "data/maps/LittlerootTown/scripts.pory"
+	.string "PROF. BIRCH'S HOUSE$"
 # 998 "data/maps/LittlerootTown/scripts.pory"
 
 # 999 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_TownSign:
-# 1000 "data/maps/LittlerootTown/scripts.pory"
-	.string "LITTLEROOT TOWN\n"
-# 1001 "data/maps/LittlerootTown/scripts.pory"
-	.string "“A town that can't be shaded any hue.”$"
-# 1002 "data/maps/LittlerootTown/scripts.pory"
-
-# 1003 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_ProfBirchsLab:
-# 1004 "data/maps/LittlerootTown/scripts.pory"
-	.string "PROF. BIRCH'S POKéMON LAB$"
-# 1005 "data/maps/LittlerootTown/scripts.pory"
-
-# 1006 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_PlayersHouse:
-# 1007 "data/maps/LittlerootTown/scripts.pory"
-	.string "{PLAYER}'s HOUSE$"
-# 1008 "data/maps/LittlerootTown/scripts.pory"
-
-# 1009 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_ProfBirchsHouse:
-# 1010 "data/maps/LittlerootTown/scripts.pory"
-	.string "PROF. BIRCH'S HOUSE$"
-# 1011 "data/maps/LittlerootTown/scripts.pory"
-
-# 1012 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-# 1013 "data/maps/LittlerootTown/scripts.pory"
+# 1000 "data/maps/LittlerootTown/scripts.pory"
 	.string "PROF. BIRCH: Well, well, {PLAYER}{KUN}!\n"
-# 1014 "data/maps/LittlerootTown/scripts.pory"
+# 1001 "data/maps/LittlerootTown/scripts.pory"
 	.string "That was good work out there!\p"
-# 1015 "data/maps/LittlerootTown/scripts.pory"
+# 1002 "data/maps/LittlerootTown/scripts.pory"
 	.string "I knew there was something special\n"
-# 1016 "data/maps/LittlerootTown/scripts.pory"
+# 1003 "data/maps/LittlerootTown/scripts.pory"
 	.string "about you when I first saw you,\l"
-# 1017 "data/maps/LittlerootTown/scripts.pory"
+# 1004 "data/maps/LittlerootTown/scripts.pory"
 	.string "but I never expected this.\p"
-# 1018 "data/maps/LittlerootTown/scripts.pory"
+# 1005 "data/maps/LittlerootTown/scripts.pory"
 	.string "Oh, yes. Do you still have the POKéDEX\n"
-# 1019 "data/maps/LittlerootTown/scripts.pory"
+# 1006 "data/maps/LittlerootTown/scripts.pory"
 	.string "I gave you?\p"
-# 1020 "data/maps/LittlerootTown/scripts.pory"
+# 1007 "data/maps/LittlerootTown/scripts.pory"
 	.string "I have something to show you.\n"
-# 1021 "data/maps/LittlerootTown/scripts.pory"
+# 1008 "data/maps/LittlerootTown/scripts.pory"
 	.string "Let's go to my LAB.$"
+
+LittlerootTown_EventScript_LeftThug::
+# 1012 "data/maps/LittlerootTown/scripts.pory"
+	lockall
+# 1013 "data/maps/LittlerootTown/scripts.pory"
+	msgbox Text_LeftThug, MSGBOX_AUTOCLOSE
+# 1014 "data/maps/LittlerootTown/scripts.pory"
+	waitmessage
+# 1015 "data/maps/LittlerootTown/scripts.pory"
+	releaseall
+	end
+
+
+LittlerootTown_EventScript_RightThug::
+# 1024 "data/maps/LittlerootTown/scripts.pory"
+	lockall
+# 1025 "data/maps/LittlerootTown/scripts.pory"
+	msgbox Text_RightThug, MSGBOX_AUTOCLOSE
+# 1026 "data/maps/LittlerootTown/scripts.pory"
+	waitmessage
+# 1027 "data/maps/LittlerootTown/scripts.pory"
+	releaseall
+	end
+
+
+Text_LeftThug::
+# 1019 "data/maps/LittlerootTown/scripts.pory"
+	.string "Hey kid, the nutty professor was\n"
+	.string "looking for ya. Better go find him.$"
+
+Text_RightThug::
+# 1031 "data/maps/LittlerootTown/scripts.pory"
+	.string "What the heck do you want? Get lost and\n"
+	.string "go play in that lab or whatever$"

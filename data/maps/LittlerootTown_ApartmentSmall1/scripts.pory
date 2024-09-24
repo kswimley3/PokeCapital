@@ -1,0 +1,28 @@
+raw `
+LittlerootTown_ApartmentSmall1_MapScripts::
+	.byte 0
+    `
+
+script LittlerootTown_Apartmentsmall1_EventScript_GayMan1{
+    lockall
+    msgbox(Text_GayMan1, MSGBOX_AUTOCLOSE)
+    waitmessage
+	releaseall
+	end
+}
+
+script LittlerootTown_Apartmentsmall1_EventScript_GayMan2{
+    lockall
+    msgbox(Text_GayMan2, MSGBOX_AUTOCLOSE)
+    waitmessage
+	releaseall
+	end
+}
+
+text Text_GayMan1{
+    format("My husband and I are pretty lucky that we're able to afford a place in this town. Though we do have to rent out our upstairs...")
+}
+
+text Text_GayMan2{
+    format("Sorry this place is suck a piece of shit. It was all we could get. If you look closely at the tiling, you can see where the pixel artist messed up.")
+}
